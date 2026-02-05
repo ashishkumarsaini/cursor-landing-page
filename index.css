@@ -4,15 +4,10 @@
   --color-theme-fg-02: #d7d6d5;
   --color-theme-fg-10: color-mix(in oklab,var(--color-theme-fg)10%,transparent);
   --color-theme-card-hex: #1b1913;
-  --color-theme-card-rgb: 27 29 39;
   --color-theme-card-01-hex: #1d1b15;
   --color-theme-card-02-hex: #201e18;
   --color-theme-card-03-hex: #26241e;
-  --color-theme-card-04-hex: #2b2923;
   --color-theme-card-hover-hex: #201e18;
-  --color-theme-product-chrome: var(--color-theme-bg);
-  --color-theme-product-editor: var(--color-theme-card-hex);
-  --color-theme-product-text: #26251eeb;
   --color-theme-accent: #f54e00;
   --color-theme-accent-hover: color-mix(in oklab, var(--color-theme-accent) 75%, transparent);
   --color-theme-text-sec: color-mix(in oklab, var(--color-theme-fg) 60%, transparent);
@@ -41,10 +36,34 @@
 
 @font-face {
     font-family: CursorGothic;
-    src: url('fonts/CursorGothic-Regular.woff2') format('woff2');
+    src: url(./fonts/CursorGothic_Regular-s.p.a361088d.woff2) format("woff2");
     font-display: swap;
-    font-weight: normal;
+    font-weight: 400;
     font-style: normal;
+}
+
+@font-face {
+    font-family: CursorGothic;
+    src: url(./fonts/CursorGothic_Italic-s.p.00bb2606.woff2) format("woff2");
+    font-display: swap;
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: CursorGothic;
+    src: url(./fonts/CursorGothic_Bold-s.p.95169710.woff2) format("woff2");
+    font-display: swap;
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: CursorGothic;
+    src: url(./fonts/CursorGothic_BoldItalic-s.p.036859cb.woff2) format("woff2");
+    font-display: swap;
+    font-weight: 700;
+    font-style: italic;
 }
 
 * {
@@ -53,7 +72,7 @@
 }
 
 body {
-  font-family: CursorGothic, sans-serif;
+  font-family: "CursorGothic","CursorGothic Fallback",system-ui,Helvetica Neue,Helvetica,Arial,sans-serif;
   background-color: var(--color-theme-bg);
   height: 150vh;
   color: var(--color-theme-fg);
@@ -83,10 +102,11 @@ section {
 }
 
 .section-heading {
-  margin-bottom: calc(var(--v));
+  margin-bottom: calc(var(--v) * 1);
   font-size: var(--text-md-lg);
   line-height: 1.25;
-  letter-spacing: .0155em;
+  letter-spacing: -.0155em;
+  font-weight: 100;
 }
 
 .container {
