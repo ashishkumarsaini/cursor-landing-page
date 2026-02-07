@@ -97,3 +97,7 @@ Other layout variables: `--max-width-container: 1300px`, `--site-header-height: 
 ## Running Locally
 
 Open `index.html` in a browser (e.g. drag into Chrome/Firefox or use a simple static server). No build or install required.
+
+## Screenshot
+
+![Cursor landing page clone screenshot](./assets/screen-capture.jpg)
