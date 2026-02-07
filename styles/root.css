@@ -1,0 +1,106 @@
+:root {
+  --color-theme-bg: #14120b;
+  --color-theme-fg: #edecec;
+  --color-theme-fg-02: #d7d6d5;
+  --color-theme-fg-10: color-mix(in oklab, var(--color-theme-fg)10%, transparent);
+  --color-theme-card-hex: #1b1913;
+  --color-theme-card-01-hex: #1d1b15;
+  --color-theme-card-02-hex: #201e18;
+  --color-theme-card-03-hex: #26241e;
+  --color-theme-card-hover-hex: #201e18;
+  --color-theme-accent: #f54e00;
+  --color-theme-accent-hover: color-mix(in oklab, var(--color-theme-accent) 75%, transparent);
+  --color-theme-text-sec: color-mix(in oklab, var(--color-theme-fg) 60%, transparent);
+  --color-theme-border-02-5: color-mix(in oklab, var(--color-theme-fg)20%, transparent);
+  --g: calc(10rem / 16);
+  --v: 1rem * 1.4;
+  --max-width-container: 1300px;
+  --site-header-height: 52px;
+  --text-xs: .75rem;
+  --text-sm: .875rem;
+  --text-base: 1rem;
+  --text-md: 1.375rem;
+  --text-md-lg: 1.625rem;
+  --text-lg: 2.25rem;
+  --text-xl: 3.25rem;
+  --text-2xl: 4.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+  --font-weight-100: 100;
+  --font-weight-300: 300;
+  --font-weight-400: 400;
+  --font-weight-500: 500;
+  --font-weight-600: 600;
+  --font-weight-700: 700;
+  --font-weight-900: 900;
+}
+
+@font-face {
+  font-family: CursorGothic;
+  src: url(./assets/fonts/CursorGothic_Regular-s.p.a361088d.woff2) format("woff2");
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: CursorGothic;
+  src: url(./assets/CursorGothic_Italic-s.p.00bb2606.woff2) format("woff2");
+  font-display: swap;
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: CursorGothic;
+  src: url(./assets/CursorGothic_Bold-s.p.95169710.woff2) format("woff2");
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: CursorGothic;
+  src: url(./assets/CursorGothic_BoldItalic-s.p.036859cb.woff2) format("woff2");
+  font-display: swap;
+  font-weight: 700;
+  font-style: italic;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  font-family: "CursorGothic", "CursorGothic Fallback", system-ui, Helvetica Neue, Helvetica, Arial, sans-serif;
+  background-color: var(--color-theme-bg);
+  height: 150vh;
+  color: var(--color-theme-fg);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+a {
+  display: inline-flex;
+  text-decoration: none;
+  color: var(--color-theme-fg);
+  cursor: pointer;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+main {
+  padding-block-start: var(--site-header-height);
+}

@@ -1,0 +1,63 @@
+#footer {
+  padding: calc(var(--v) * 3) calc(var(--g) * 2) calc(var(--g) * 3);
+  background-color: var(--color-theme-card-hex);
+}
+
+.footer-nav-container {
+  margin-bottom: calc(var(--v) * 4.5);
+}
+
+.footer-nav {
+  grid-template-columns: repeat(5, 1fr);
+  gap: calc(var(--g) * 1)
+}
+
+.footer-nav-heading,
+.footer-nav-link {
+  font-weight: var(--font-weight-300);
+  line-height: 1.5;
+  letter-spacing: .01em;
+}
+
+.footer-nav-heading {
+  padding-bottom: calc(var(--v) * 2.5/12);
+  color: var(--color-theme-text-sec)
+}
+
+.footer-nav-link {
+  padding-block: calc(var(--v) * 2.5/12);
+}
+
+.company-info,
+.website-theme-container {
+  gap: calc(var(--g) * 1.5);
+  color: var(--color-theme-text-sec)
+}
+
+.company-info small {
+  font-size: var(--text-sm);
+  line-height: 1.5;
+  letter-spacing: .01em;
+}
+
+.theme-selector {
+  display: flex;
+  background-color: var(--color-theme-card-03-hex);
+  border-radius: 20px;
+  padding: calc(0.25rem * .5);
+}
+
+.theme-option {
+  border-radius: 20px;
+  padding: .4em .6em .42em;
+  line-height: 1;
+}
+
+.theme-option span {
+  display: block;
+  height: 13px;
+}
+
+.theme-option-selected {
+  background-color: var(--color-theme-fg-10);
+}

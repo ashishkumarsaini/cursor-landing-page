@@ -1,0 +1,137 @@
+/* typography  */
+.text-xs {
+  font-size: var(--text-xs);
+  line-height: 1.5;
+}
+
+.text-sm {
+  font-size: var(--text-sm);
+}
+
+.text-base {
+  font-size: var(--text-base);
+}
+
+.text-md {
+  font-size: var(--text-md);
+}
+
+.text-md-lg {
+  font-size: var(--text-md-lg);
+}
+
+/* headings */
+.heading-xs {
+  font-size: var(--text-lg);
+}
+
+.heading-sm {
+  font-size: var(--text-xl);
+}
+
+.heading-md {
+  font-size: var(--text-2xl);
+}
+
+.heading-lg {
+  font-size: var(--text-3xl);
+}
+
+.heading-xl {
+  font-size: var(--text-4xl);
+}
+
+/* buttons */
+.btn-sm {
+  font-size: var(--text-sm);
+  padding: .4em .75em .42em;
+  border-radius: 15px;
+}
+
+.btn-lg {
+  font-size: var(--text-base);
+  padding: .78em 1.35em .8em;
+  border-radius: 25px;
+}
+
+
+.btn-primary {
+  background-color: var(--color-theme-fg);
+  border: 1px solid var(--color-theme-fg);
+  color: var(--color-theme-bg);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-theme-fg-02);
+  border: 1px solid var(--color-theme-fg-02);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  border: 1px solid var(--color-theme-border-02-5);
+}
+
+.btn-secondary:hover {
+  background-color: var(--color-theme-card-hex);
+  border: 1px solid var(--color-theme-border-02-5);
+  color: var(--color-theme-text)
+}
+
+/* layout */
+.grid {
+  display: grid;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container {
+  max-width: var(--max-width-container);
+  margin: 0 auto;
+}
+
+.no-margin {
+  margin: 0px !important;
+}
+
+/* card */
+.card {
+  padding: calc(var(--g) * 1.75);
+  background-color: var(--color-theme-card-hex);
+  border: 1px solid var(--color-theme-card-hover-hex);
+  border-radius: 4px;
+}
+
+/* common css */
+section {
+  padding: calc(var(--v) * 3) calc(var(--g) * 2);
+}
+
+.section--flush-y {
+  padding-block: 0;
+}
+
+.section-heading {
+  margin-bottom: calc(var(--v) * 1);
+  font-size: var(--text-md-lg);
+  line-height: 1.25;
+  letter-spacing: 0.6px;
+  font-weight: var(--font-weight-300);
+}
+
+
+
+.cta-button {
+  padding: .78em 1.35em .8em;
+  border-radius: 25px;
+  border: none;
+  /* text-xs*/
+  font-size: var(--text-base);
+  line-height: 1;
+  background-color: var(--color-theme-fg);
+  color: var(--color-theme-bg);
+  display: inline-flex;
+}
