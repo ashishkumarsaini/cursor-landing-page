@@ -15,6 +15,14 @@
 
 .hero-banner {
   width: var(--max-width-container);
+
+  @media (max-width: 900px) {
+    width: 1024px;
+  }
+
+  @media (max-width: 658px) {
+    width: 800px
+  }
 }
 
 /* trusted company section */
@@ -114,6 +122,10 @@
 .featured-card-banner img {
   @media (max-width: 900px) {
     min-width: 700px;
+  }
+
+  @media (max-width: 658px) {
+    min-width: 550px;
   }
 }
 
