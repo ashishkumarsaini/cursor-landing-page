@@ -33,6 +33,14 @@
   padding-block: calc(var(--v) * 2.5/12);
 }
 
+.footer-copyright-container {
+  @media (max-width: 658px) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: calc(var(--v) * 2);
+  }
+}
+
 .company-info,
 .website-theme-container {
   gap: calc(var(--g) * 1.5);

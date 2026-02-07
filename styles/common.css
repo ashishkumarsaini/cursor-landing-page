@@ -133,3 +133,19 @@ section {
   color: var(--color-theme-bg);
   display: inline-flex;
 }
+
+.only-mobile {
+  display: none;
+
+  @media (max-width: 658px) {
+    display: block;
+  }
+}
+
+.only-desktop {
+  display: block;
+
+  @media (max-width: 658px) {
+    display: none;
+  }
+}
