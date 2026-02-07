@@ -18,7 +18,7 @@
 <body>
 
   <header id="site-header">
-    <div class="container header-container grid">
+    <div class="container grid header-container">
       <div class="logo-container">
         <a href="#">
           <object data="./assets/svg/brand-logo.svg" type="image/svg+xml" class="brand-logo"></object>
@@ -51,6 +51,9 @@
       <div class="flex header-buttons">
         <a href="https://cursor.com/dashboard" class="btn-sm btn-secondary">Sign in</a>
         <a href="https://cursor.com/download" class="btn-sm btn-primary">Download</a>
+        <div class="hamburger-menu">
+          <object data="./assets/svg/hamburger.svg" type="image/svg+xml" class="brand-logo"></object>
+        </div>
       </div>
     </div>
   </header>
@@ -67,7 +70,7 @@
             class="btn-lg btn-primary">Download for macOS ⤓</a>
         </div>
         <div class="hero-banner-container">
-          <img src="./assets/images/hero-banner.jpg" class="hero-banner" alt="Cursor IDE">
+          <img src="./assets/images/hero-banner.png" class="hero-banner" alt="Cursor IDE">
         </div>
       </div>
     </section>
@@ -76,7 +79,7 @@
     <section id="trusted-company">
       <div class="container">
         <h2 class="text-sm trusted-company-heading">Trusted every day by millions of professional developers.</h2>
-        <div class="company-logo-container">
+        <div class="grid company-logo-container">
           <div class="card company-logo">
             <img
               src="https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/misc/asset-beae7a1f5d7eb381a872.svg"
@@ -123,61 +126,61 @@
 
     <!-- featured section -->
     <section id="featured-section">
-      <section class="section--flush-y">
-        <div class="container">
-          <a href="https://cursor.com/features#agent" alt="Learn about Agent" class="card grid featured-card">
-            <div class="featured-card-copy">
-              <h3 class="text-md featured-card-heading">
-                Agent turns ideas into code
-              </h3>
-              <p class="text-md featured-card-description">
-                A human-AI programmer, orders of magnitude more effective than any developer alone.
-              </p>
-              <span class="feature-card-link">Learn about Agent →</span>
-            </div>
-            <div class="featured-card-banner">
-              <img src="./assets/images/featured1.jpg" alt="Agent turns ideas into code" width="100%">
-            </div>
-          </a>
-        </div>
-      </section>
-      <section class="section--flush-y">
-        <div class="container">
-          <a href="https://cursor.com/features#tab" alt="Magically accurate autocomplete"
-            class="card featured-card featured-card-reverse">
-            <div class="featured-card-copy">
-              <h3 class="text-md featured-card-heading">
-                Magically accurate autocomplete
-              </h3>
-              <p class="text-md featured-card-description">
-                Our custom Tab model predicts your next action with striking speed and precision.
-              </p>
-              <span class="feature-card-link">Learn about Tab →</span>
-            </div>
-            <div class="featured-card-banner">
-              <img src="./assets/images/featured2.jpg" alt="Magically accurate autocomplete" width="100%">
+      <div class="container">
+        <section class="section--flush">
+          <a href="https://cursor.com/features#agent" alt="Learn about Agent">
+            <div class="card grid featured-card">
+              <div class="featured-card-copy">
+                <h3 class="text-md featured-card-heading">
+                  Agent turns ideas into code
+                </h3>
+                <p class="text-md featured-card-description">
+                  A human-AI programmer, orders of magnitude more effective than any developer alone.
+                </p>
+                <span class="feature-card-link">Learn about Agent →</span>
+              </div>
+              <div class="featured-card-banner">
+                <img src="./assets/images/featured1.jpg" alt="Agent turns ideas into code" width="100%">
+              </div>
             </div>
           </a>
-        </div>
-      </section>
-      <section class="section--flush-y">
-        <div class="container">
-          <a href="https://cursor.com/features#ecosystem" alt="Everywhere software gets built"
-            class="card grid featured-card no-margin">
-            <div class="featured-card-copy">
-              <h3 class="text-md featured-card-heading">Everywhere software gets built</h3>
-              <p class="text-md featured-card-description">
-                Cursor is in GitHub reviewing your PRs, a teammate in Slack, and anywhere
-                else you work.
-              </p>
-              <span class="feature-card-link">Learn about Cursor's ecosystem →</span>
-            </div>
-            <div class="featured-card-banner">
-              <img src="./assets/images/featured3.jpg" alt="Learn about Cursor's ecosystem →" width="100%">
+        </section>
+        <section class="section--flush">
+          <a href="https://cursor.com/features#tab" alt="Magically accurate autocomplete">
+            <div class="card grid featured-card featured-card-reverse">
+              <div class="featured-card-copy">
+                <h3 class="text-md featured-card-heading">
+                  Magically accurate autocomplete
+                </h3>
+                <p class="text-md featured-card-description">
+                  Our custom Tab model predicts your next action with striking speed and precision.
+                </p>
+                <span class="feature-card-link">Learn about Tab →</span>
+              </div>
+              <div class="featured-card-banner">
+                <img src="./assets/images/featured2.jpg" alt="Magically accurate autocomplete" width="100%">
+              </div>
             </div>
           </a>
-        </div>
-      </section>
+        </section>
+        <section class="section--flush">
+          <a href="https://cursor.com/features#ecosystem" alt="Everywhere software gets built">
+            <div class="card grid featured-card no-margin">
+              <div class="featured-card-copy">
+                <h3 class="text-md featured-card-heading">Everywhere software gets built</h3>
+                <p class="text-md featured-card-description">
+                  Cursor is in GitHub reviewing your PRs, a teammate in Slack, and anywhere
+                  else you work.
+                </p>
+                <span class="feature-card-link">Learn about Cursor's ecosystem →</span>
+              </div>
+              <div class="featured-card-banner">
+                <img src="./assets/images/featured3.jpg" alt="Learn about Cursor's ecosystem →" width="100%">
+              </div>
+            </div>
+          </a>
+        </section>
+      </div>
     </section>
 
     <!-- testimonials section -->
@@ -292,7 +295,7 @@
       <div class="container">
         <h2 class="section-heading">Stay on the frontier</h2>
         <div class="grid feature-card-container">
-          <a href="https://cursor.com/docs/models">
+          <a href="https://cursor.com/docs/models" class="featured-card-link">
             <div class="card">
               <div>
                 <h3 class="featured-card-heading">Use the best model for every task</h3>
@@ -308,7 +311,7 @@
               </div>
             </div>
           </a>
-          <a href="https://cursor.com/docs/models">
+          <a href="https://cursor.com/docs/models" class="featured-card-link">
             <div class="card">
               <div>
                 <h3 class="featured-card-heading">Complete codebase understanding</h3>
@@ -324,7 +327,7 @@
               </div>
             </div>
           </a>
-          <a href="https://cursor.com/docs/models">
+          <a href="https://cursor.com/docs/models" class="featured-card-link">
             <div class="card">
               <div>
                 <h3 class="featured-card-heading">Develop enduring software</h3>

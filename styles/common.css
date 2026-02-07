@@ -110,8 +110,8 @@ section {
   padding: calc(var(--v) * 3) calc(var(--g) * 2);
 }
 
-.section--flush-y {
-  padding-block: 0;
+.section--flush {
+  padding: 0;
 }
 
 .section-heading {
@@ -121,8 +121,6 @@ section {
   letter-spacing: 0.6px;
   font-weight: var(--font-weight-300);
 }
-
-
 
 .cta-button {
   padding: .78em 1.35em .8em;

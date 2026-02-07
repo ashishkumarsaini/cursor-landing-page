@@ -9,7 +9,12 @@
 
 .footer-nav {
   grid-template-columns: repeat(5, 1fr);
-  gap: calc(var(--g) * 1)
+  gap: calc(var(--g) * 1);
+
+  @media (max-width: 658px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: calc(var(--g) * 3);
+  }
 }
 
 .footer-nav-heading,

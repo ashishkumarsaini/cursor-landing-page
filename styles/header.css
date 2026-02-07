@@ -1,6 +1,5 @@
-header {
+#site-header {
   background-color: var(--color-theme-bg);
-  padding-inline: calc(var(--g) * 2);
   position: fixed;
   top: 0;
   left: 0;
@@ -9,12 +8,12 @@ header {
 }
 
 .header-container {
+  padding-inline: calc(var(--g) * 2);
   position: relative;
   z-index: 2;
   height: var(--site-header-height);
   grid-template-columns: auto 1fr auto;
   align-items: center;
-  left: -22px;
 }
 
 .logo-container {
@@ -34,6 +33,10 @@ header {
 
 .nav-links {
   margin: 0 auto;
+
+  @media (max-width: 800px) {
+    display: none;
+  }
 }
 
 .nav-link {
@@ -48,4 +51,20 @@ header {
 
 .header-buttons {
   gap: calc(var(--g) * .75);
+}
+
+.header-buttons .btn-primary {
+  display: block;
+
+  @media (max-width: 420px) {
+    display: none;
+  }
+}
+
+.hamburger-menu {
+  display: none;
+
+  @media (max-width: 800px) {
+    display: block;
+  }
 }

@@ -33,6 +33,10 @@
   --font-weight-600: 600;
   --font-weight-700: 700;
   --font-weight-900: 900;
+
+  --desktop-screen-width: 900px;
+  --tablet-screen-width: 658px;
+  --mobile-large-screen-width: 420px;
 }
 
 @font-face {

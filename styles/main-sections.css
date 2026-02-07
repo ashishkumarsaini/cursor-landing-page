@@ -9,10 +9,12 @@
 
 .hero-banner-container {
   display: grid;
+  border-radius: 4px;
+  overflow: hidden;
 }
 
 .hero-banner {
-  width: 100%;
+  width: var(--max-width-container);
 }
 
 /* trusted company section */
@@ -29,10 +31,13 @@
 }
 
 .company-logo-container {
-  display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: repeat(8, 1fr);
   gap: var(--g);
+
+  @media (max-width: 900px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .company-logo {
@@ -40,7 +45,7 @@
   align-items: center;
   justify-content: center;
   height: 6.25rem;
-  padding-block: 0;
+  padding: 0;
 }
 
 .company-logo img {
@@ -52,6 +57,11 @@
   grid-template-columns: repeat(24, 1fr);
   gap: calc(var(--g) * 1);
   margin-bottom: calc(var(--v) * 4);
+
+  @media (max-width: 900px) {
+    display: block;
+    gap: calc(var(--g) * 1.75);
+  }
 }
 
 .featured-card-copy {
@@ -61,6 +71,10 @@
   justify-content: center;
   flex-direction: column;
   padding: 0 calc(var(--g) * 3) 0 calc(var(--g) * .25);
+
+  @media (max-width: 900px) {
+    padding: 0;
+  }
 }
 
 .featured-card-heading,
@@ -87,11 +101,29 @@
 .featured-card-banner {
   grid-column-start: 9;
   grid-column-end: 25;
+  border-radius: 4px;
+
+  @media (max-width: 900px) {
+    padding-top: 20px;
+    width: calc(100vw - 77px);
+    overflow: hidden;
+  }
+}
+
+/* use to maximize the image when on small screen */
+.featured-card-banner img {
+  @media (max-width: 900px) {
+    min-width: 700px;
+  }
 }
 
 .featured-card-reverse .featured-card-banner {
   grid-column-start: 1;
   grid-column-end: 17;
+
+  @media (max-width: 900px) {
+    padding-top: 20px;
+  }
 }
 
 .featured-card-reverse .featured-card-copy {
@@ -99,6 +131,13 @@
   grid-column-end: 25;
   order: 1;
   padding: 0 calc(var(--g) * .25) 0 calc(var(--g) * 3);
+
+  @media (max-width: 900px) {
+    grid-column-start: 1;
+    grid-column-end: 25;
+    padding: 0;
+    order: 0;
+  }
 }
 
 /* testimonials section */
@@ -111,6 +150,14 @@
 .testimonials-container {
   grid-template-columns: repeat(3, 1fr);
   gap: calc(var(--g) * 1);
+
+  @media (max-width: 900px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 658px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 .testimonial-card {
@@ -146,6 +193,16 @@
 .feature-card-container {
   grid-template-columns: repeat(3, 1fr);
   gap: var(--g);
+
+  @media (max-width: 900px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.featured-card-link {
+  @media (max-width: 900px) {
+    display: block;
+  }
 }
 
 .featured-card-heading {
@@ -177,6 +234,14 @@
 .changelog-container {
   grid-template-columns: repeat(4, 1fr);
   gap: calc(var(--g));
+
+  @media (max-width: 900px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 658px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 .changelog-card {
@@ -240,6 +305,10 @@
 
 .hightlights-container {
   grid-template-columns: repeat(24, 1fr);
+
+  @media (max-width: 658px) {
+    display: block;
+  }
 }
 
 .hightlights-heading-container {
@@ -256,6 +325,10 @@
 .hightlights-list-container {
   grid-column-start: 9;
   grid-column-end: 25;
+
+  @media (max-width: 658px) {
+    margin-top: 20px;
+  }
 }
 
 .hightlight-article {
